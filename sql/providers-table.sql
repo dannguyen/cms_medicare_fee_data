@@ -1,3 +1,8 @@
+/* Just the fields relevant for each provider */
+/*
+  A unique id can be derived from npi, medicare_participation_indicator, and place_of_service
+*/
+
 CREATE TABLE `providers` (
   `npi` char(12) DEFAULT NULL,
   `nppes_provider_last_org_name` varchar(255) DEFAULT NULL,

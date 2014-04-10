@@ -1,3 +1,7 @@
+/* Just the fields relevant to each payment record per hcpcs_code per provider */
+
+/*  Note: field sizes are not optimized, check appendix A in the CMS methodology */
+
 CREATE TABLE `payments` (
   `npi` char(12) DEFAULT NULL,
   `medicare_participation_indicator` char(1) DEFAULT NULL,
