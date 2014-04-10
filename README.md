@@ -20,3 +20,17 @@ Homepage: [http://cms.gov/Research-Statistics-Data...](http://www.cms.gov/Resear
 ### Data features
 
 - 9,153,273 rows (including useless second row) 
+- 880,645 distinct NPI
+ 
+  ``` sql
+      SELECT COUNT(DISTINCT npi) FROM payments
+  ```
+
+- 1,117,074 distinct nppes info
+ 
+  ``` sql
+      select  npi,  nppes_provider_last_org_name,  nppes_provider_first_name,  nppes_provider_mi,  nppes_credentials,  nppes_provider_gender,  nppes_entity_code,  nppes_provider_street1,  nppes_provider_street2,  nppes_provider_city,  nppes_provider_zip,  nppes_provider_state,  nppes_provider_country,  provider_type,  medicare_participation_indicator,  place_of_service
+FROM `payments`
+GROUP BY npi,  nppes_provider_last_org_name,  nppes_provider_first_name,  nppes_provider_mi,  nppes_credentials,  nppes_provider_gender,  nppes_entity_code,  nppes_provider_street1,  nppes_provider_street2,  nppes_provider_city,  nppes_provider_zip,  nppes_provider_state,  nppes_provider_country,  provider_type,  medicare_participation_indicator,  place_of_service
+  
+   ```
