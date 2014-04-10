@@ -1,10 +1,10 @@
-# CMS Medicare Provider fees; A data diary
+## CMS Medicare Provider fees; A data diary
 
 
 
 
 
-## Official data source and format
+### Official data source and format
 
 Name: "Medicare Provider Utilization and Payment Data: Physician and Other Supplier"
 
@@ -15,3 +15,8 @@ Homepage: [http://cms.gov/Research-Statistics-Data...](http://www.cms.gov/Resear
 - Lines terminated by `\r\n`
 - Second line contains metadata (WTF)
 - Quotation marks not used/needed to enclose values 
+
+
+### Data features
+
+- 9,153,273 rows (including useless second row) 
